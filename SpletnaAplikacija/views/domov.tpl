@@ -41,7 +41,7 @@
  <th>Skupaj</th>
 <th> 
 
-<input name="znesek" type="text" value="{{znesek}}">
+<input name="znesek" type="text" value="{{round(sum(imena[x][4] for x in izdelki),2)}}">
 
 
  </th>
@@ -50,7 +50,7 @@
 
 <h2>Izberi način plačila:</h2>
 <br>
-<label class="radio-inline"><input type="radio" value="1" name="placilo" checked >Gotovina</label>
+<label class="radio-inline"><input type="radio" value="1" name="placilo">Gotovina</label>
 <label class="radio-inline"><input type="radio" value="2" name="placilo">Kartica</label>
 <label class="radio-inline"><input type="radio" value="3" name="placilo">Dobavnica</label>
 <br><br><br>
